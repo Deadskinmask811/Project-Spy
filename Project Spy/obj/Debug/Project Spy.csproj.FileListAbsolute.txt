@@ -1,0 +1,6 @@
+E:\Projects\Project Spy\Project Spy\bin\Debug\Project Spy.exe.config
+E:\Projects\Project Spy\Project Spy\bin\Debug\Project Spy.exe
+E:\Projects\Project Spy\Project Spy\bin\Debug\Project Spy.pdb
+E:\Projects\Project Spy\Project Spy\obj\Debug\Project Spy.csprojResolveAssemblyReference.cache
+E:\Projects\Project Spy\Project Spy\obj\Debug\Project Spy.exe
+E:\Projects\Project Spy\Project Spy\obj\Debug\Project Spy.pdb
