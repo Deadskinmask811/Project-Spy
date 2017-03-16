@@ -10,8 +10,7 @@ namespace Project_Spy
     class Program
     {
         static void Main(string[] args)
-        {
-            //hello
+        {            
             CommandManager commandMgr = new CommandManager();
             InputManager inputMgr = new InputManager();
             Player player = new Player();
