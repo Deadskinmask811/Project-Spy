@@ -8,17 +8,23 @@ namespace Project_Spy.GameObjects
 {
     class Rock : GameObject
     {
-        private string name = "ROCK";     
+        private string name;     
+
+        public Rock() : this("ROCK")
+        {
+        }
+
+        public Rock(string rockName) : base(rockName)
+        {
+            name = rockName;
+        }
+
         public override string Name
         {
             get
             {
                 return name;
-            }
-            set
-            {
-                name = value;
-            }
+            }            
         }
 
         public override int ID

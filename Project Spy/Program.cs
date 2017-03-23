@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Project_Spy.GameObjects;
+using Project_Spy.Scenes;
 
 namespace Project_Spy
 {
@@ -14,21 +15,20 @@ namespace Project_Spy
             CommandManager commandMgr = new CommandManager();
             InputManager inputMgr = new InputManager();
             Player player = new Player();
-            GameObject rock1 = new Rock();
-            GameObject rock2 = new Rock();
-            rock2.Name = "SMALL_ROCK";            
-            // temporary array of objects to mimic scene objects
-            GameObject[] objs = { rock1, rock2 };
+            Scene test = new TestScene("test scene");
+            
             string input = inputMgr.GetInput();
             //command gets ToUpper and Split here.
             commandMgr.SetUpCommand(input);
             
-            if (inputMgr.IsValidLength() && commandMgr.isValidActionCommand(player.Actions) && commandMgr.isValidObjectCommand(objs)) 
+            //move all of this logic below into the GameManager class to handle validity of command and process it into a player action.
+            // Game manager will also take care of "packing" and building scenes into missions and tracking which scene the player is in and move the player between then.
+            if (inputMgr.IsValidLength() && commandMgr.isValidActionCommand(player.Actions) && commandMgr.isValidObjectCommand(test.Objects)) 
             {
                 // return input as string[].
                 string[] command = commandMgr.getCommand();
                 //returns GameObject whos name matches command[1]
-                GameObject obj = commandMgr.getValidObject(objs);
+                GameObject obj = commandMgr.getValidObject(test.Objects);
                 
                 // If valid game object, proceed to do action upon it.
                 if(obj != null)
