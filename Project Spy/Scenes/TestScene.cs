@@ -22,7 +22,7 @@ namespace Project_Spy.Scenes
         {
             get
             {
-                return new GameObject[] { new Rock(), new Rock("SMALL_ROCK") };
+                return new GameObject[] { new Rock(), new Rock("SMALL_ROCK"), new Rock("MARBLE_ROCK") };
             }
         }
 
@@ -30,9 +30,10 @@ namespace Project_Spy.Scenes
         {
             get
             {
-                return "this is the summary";
+                return "Test Scene Summary...";
             }
         }
+                
 
         public TestScene(string sceneName) : base(sceneName)
         {

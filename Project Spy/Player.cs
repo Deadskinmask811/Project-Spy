@@ -39,7 +39,7 @@ namespace Project_Spy
             try
             {
                 if (obj.Throwable)
-                {
+                {   
                     Console.WriteLine("{0} throws {1} on the GROUND!!!!", Name, obj.Name);                    
                 }
                 else

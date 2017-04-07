@@ -10,7 +10,7 @@ namespace Project_Spy
     {
         private string name;
         private GameObject[] objects;
-        private string summary;
+        //private string summary;
 
         public abstract string Name { get; }
         public abstract GameObject[] Objects { get; }
@@ -20,5 +20,7 @@ namespace Project_Spy
         {
             name = sceneName;
         }
+
+        // children need method to display summary that has names of objects within that you can interact with.
     }
 }
